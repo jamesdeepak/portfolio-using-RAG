@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepak | AI Architect & Engineer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="description"
+        content="Portfolio of Deepak, an AI Engineer offering advanced generative AI and RAG solutions.">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+
+    <nav>
+        <div class="logo">Deepak<span class="dot">.</span>AI</div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#services">Expertise</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">
+                <i class="fa-solid fa-code-branch"></i> AI Architect & Engineer
+            </div>
+            <h1>Empowering Business with <br> <span class="gradient-text typing-text">Intelligent AI</span></h1>
+            <p>I architect scalable AI solutions, specializing in Retrieval-Augmented Generation (RAG), Large Language
+                Models (LLMs), and predictive analytics to drive innovation.</p>
+            <div class="cta-group">
+                <button class="btn btn-primary"
+                    onclick="window.scrollTo(0, document.body.scrollHeight); document.getElementById('aiTrigger').click();">
+                    <i class="fa-solid fa-sparkles"></i> Ask AI Assistant
+                </button>
+                <button class="btn btn-secondary" onclick="document.getElementById('services').scrollIntoView()">
+                    Explore Services
+                </button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-wrapper">
+                <img src="profile.jpg" alt="Deepak - AI Engineer">
+            </div>
+            <div class="floating-card c1">
+                <i class="fa-solid fa-brain"></i>
+                <span>Advanced Neural Networks</span>
+            </div>
+            <div class="floating-card c2">
+                <i class="fa-solid fa-robot"></i>
+                <span>Generative AI Solutions</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Technical Expertise</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+                <h3>Custom ML Architectures</h3>
+                <p>End-to-end development of proprietary machine learning models, from data preprocessing to production
+                    deployment.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                <h3>LLM & RAG Systems</h3>
+                <p>Building context-aware assistants that leverage your private data using Retrieval-Augmented
+                    Generation.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-eye"></i></div>
+                <h3>Computer Vision</h3>
+                <p>Automated visual analysis systems for object detection, facial recognition, and quality control.</p>
+            </div>
+            <div class="service-card">
+                <div class="icon"><i class="fa-solid fa-chart-network"></i></div>
+                <h3>Predictive Analytics</h3>
+                <p>Transforming complex datasets into actionable strategic insights using advanced statistical modeling.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Assistant / RAG Widget -->
+    <div class="ai-widget-trigger" id="aiTrigger">
+        <i class="fa-solid fa-message"></i>
+    </div>
+
+    <div class="ai-widget" id="aiWidget">
+        <div class="ai-header">
+            <div class="ai-title">
+                <i class="fa-solid fa-robot"></i>
+                <span>Deepak's AI Assistant</span>
+            </div>
+            <button class="close-btn" id="closeAi"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="ai-body" id="chatBody">
+            <div class="message bot">
+                <p>Hello! I am an AI agent trained on Deepak's professional portfolio. Select a query below to learn how
+                    we can collaborate.</p>
+            </div>
+            <!-- Messages go here -->
+        </div>
+        <div class="ai-footer">
+            <div class="suggestions" id="suggestions">
+                <!-- Suggestion chips injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <footer id="contact">
+        <div class="footer-info">
+            <p>&copy; 2024 Deepak AI Solutions. All rights reserved.</p>
+        </div>
+        <div class="socials">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="mailto:deepak@example.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
